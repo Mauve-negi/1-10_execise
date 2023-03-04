@@ -8,6 +8,7 @@
 header
   {
   height: 50px;
+  width: 100%;
   background-color: #FF9A4B;
   }
 
@@ -74,4 +75,82 @@ footer
   {
   height: 50px;
   background-color: #AAAAAA;
+  }
+
+/* スマホスクリーンの場合(768px以下) */
+@media screen and (max-width: 768px)
+  {
+    header
+      {
+      height: 50px;
+      width: 100%;
+      background-color: #FF9A4B;
+      }
+
+    main
+      {
+      width: 100%;
+      margin: 50px auto;
+      display: flex;
+      flex-flow: column;
+      }
+
+    .step-box
+      {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #EEEEEE;
+      }
+
+    .step-box:last-child
+      {
+      margin-right: auto;
+      }
+
+    .step-img1
+      {
+      height: 150px;
+      background-image: url(img/flow01.png);
+      background-position: bottom;
+      background-size: cover;
+      }
+
+    .step-img2
+      {
+      height: 150px;
+      background-image: url(img/flow02.png);
+      background-position: bottom;
+      background-size: cover;
+      }
+
+    .step-img3
+      {
+      height: 150px;
+      background-image: url(img/flow03.png);
+      background-position: bottom;
+      background-size: cover;
+      }
+
+    .step-num
+      {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #FF9A4B;
+      color: #FFFFFF;
+      }
+
+    .title
+      {
+      margin: 15px 0 5px;
+      }
+
+    footer
+      {
+      background-color: #AAAAAA;
+      }
+
   }
